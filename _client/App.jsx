@@ -13,11 +13,25 @@ import { StyleSheet, View, Text } from "react-native";
 import Signup from "./src/screens/Signup";
 import RestaurantMenu from "./src/screens/RestaurantMenu";
 import ChooseRestaurant from "./src/screens/ChooseRestaurant";
+import VotingDashboard from "./src/components/screens/VotingDashboard";
+import { SafeAreaProvider } from "react-native-safe-area-context"; 
+import AppContainer from "./src/_recipes/navigations/AppNavigation";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Navigator />
-    </NavigationContainer>
+    /* practice1 */
+
+    // <NavigationContainer>
+    //   <Navigator />
+    // </NavigationContainer>
+
+    /* practice2 */
+
+    // <SafeAreaProvider>
+    // <VotingDashboard/>
+    // </SafeAreaProvider>
+
+    /* practice3 */
+    <AppContainer/>
   );
 }
